@@ -64,7 +64,7 @@ We can only access the weather for Portland, Oregon. Lets add some interactivity
 Install yargs with:
 
 ```
-
+npm install yargs --save
 ```
 
 ## Example of API response
