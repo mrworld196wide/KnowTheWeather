@@ -1,0 +1,22 @@
+{
+  "name": "nodejsweatherapp",
+  "version": "1.0.0",
+  "description": "A simple nodejs based weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrworld196wide/KnowTheWeather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrworld196wide/KnowTheWeather/issues"
+  },
+  "homepage": "https://github.com/mrworld196wide/KnowTheWeather#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
