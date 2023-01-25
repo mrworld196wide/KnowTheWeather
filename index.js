@@ -30,6 +30,6 @@ form.addEventListener(
     "submit",
     function(event) {
         getWeather(search.value)
-        event.preventDefault();
+        event.preventDefault(); //cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
     }
 )
