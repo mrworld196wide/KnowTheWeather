@@ -9,41 +9,29 @@ $ git clone https://github.com/mrworld196wide/KnowTheWeather.git
 
 ## Making API Call
 To make our API call, we’ll be using a popular npm module called request. request has millions of downloads and is a module that simplifies the code needed to make an http request in node.
-
-Install request by running:
-
-```
-npm install request --save
-```
-
-Request is pretty easy to use. Just pass in the target url, and request returns a callback function. 
-The starter code would look something like this:
-
-```
-const request = require('request');
-request(url, function (err, response, body) {
-  if(err){
-    console.log('error:', error);
-  } else {
-    console.log('body:', body);
-  }
-});
-```
-Here, 
-- Firstly we require the request package
-- Then we pass in a url, and request returns a callback function with three arguments: err, response, and the body.
-- Then we check for an error in our request. If there is one, we log the error and are done.
-- If there is no error, we log the entire contents of the response body.
-
 For more info about the weather API give a read to the doc
 https://openweathermap.org/current
+
 
 Here’s what the code will look like:
 
 ```
 let apiKey = '****************************';
-let city = 'portland';
+let city = 'delhi';
 let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+```
+
+Fetch API using 
+
+```
+const getWeather = async(city) => {
+    weather.innerHTML = `<h2> Loading... <h2>`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+    const response = await fetch(url);
+    const data = await response.json()
+    return showWeather(data)
+}
+
 ```
 
 here,
